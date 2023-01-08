@@ -6,11 +6,12 @@ import {
 
 type Props = IButtonProps & {
   title: string;
+  variant?: 'solid' | 'outline';
 }
 
 export function Button({ 
   title,
-  variant,
+  variant = 'solid',
   ...rest
 }: Props) {
   return (
